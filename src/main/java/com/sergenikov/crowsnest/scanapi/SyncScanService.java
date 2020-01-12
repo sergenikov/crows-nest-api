@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class DefaultScanService implements ScanService {
+public class SyncScanService implements ScanService {
 
   private final NmapWrapper nmapWrapper;
 
   @Autowired
-  public DefaultScanService(final NmapWrapper nmapWrapper) {
+  public SyncScanService(final NmapWrapper nmapWrapper) {
     this.nmapWrapper = nmapWrapper;
   }
 
