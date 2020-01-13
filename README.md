@@ -1,6 +1,9 @@
 # Overview
 API that encapsulates running of Nmap scanner (for now).
 
+# Client
+There is an Angular web client for this API available [here](https://github.com/sergenikov/crows-nest-api).
+
 # Some product goals for this
 - Be able to scan hosts from a mobile phone using main network enumeration tools like nmap, dig, etc. This API has an Angular client that will allow me to scan hosts with Nmap, dig and other tools from any device once this is deployed. Of course, there are services that do that, but this is not important for a personal development project.
 - Have a functionality to show close to real time changes in opened ports of a given host. I don't know if it's really practical, but it seems cool.
