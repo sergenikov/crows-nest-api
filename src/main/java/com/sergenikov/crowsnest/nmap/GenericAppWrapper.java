@@ -1,8 +1,7 @@
 package com.sergenikov.crowsnest.nmap;
 
-import lombok.Data;
-
 import java.util.HashMap;
+import lombok.Data;
 
 @Data
 public class GenericAppWrapper {

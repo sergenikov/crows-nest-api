@@ -2,12 +2,11 @@ package com.sergenikov.crowsnest.scanapi;
 
 import com.sergenikov.crowsnest.core.AsyncService;
 import com.sergenikov.crowsnest.nmap.NmapWrapper;
+import java.util.concurrent.CompletableFuture;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
-
-import java.util.concurrent.CompletableFuture;
 
 @Component(value = "asyncScanService")
 public class AsyncScanService implements AsyncService {

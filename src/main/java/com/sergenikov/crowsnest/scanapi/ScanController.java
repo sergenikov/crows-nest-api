@@ -1,12 +1,11 @@
 package com.sergenikov.crowsnest.scanapi;
 
 import com.sergenikov.crowsnest.core.AsyncService;
+import java.util.concurrent.ExecutionException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/api/v1")

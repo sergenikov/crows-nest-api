@@ -10,9 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Encapsulates interaction with nmap and how it's best to pass and format arguments for Nmap. It
  * also validates input into Nmap to ensure that arguments passed are in the right format and cannot
@@ -38,10 +35,7 @@ public class NmapWrapper {
 
     final ExtAppResponse extAppResponse =
         this.extApp.run(
-            ExtAppRequest.builder()
-                .applicationCommand(this.getName())
-                .args(this.args)
-                .build());
+            ExtAppRequest.builder().applicationCommand(this.getName()).args(this.args).build());
 
     log.info("Ext app response {}", extAppResponse);
 
